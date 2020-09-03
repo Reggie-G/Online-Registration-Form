@@ -58,14 +58,3 @@ a[target="blank"] {
 .default {
   background-color: #52bab3;
 }
-
-.error {
-  background-color: #ff784f;
-}
-
-@media (min-width: 768px) {
-  .inln {
-    width: auto;
-    display: inline-block;
-  }
-}
