@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: o auto;
+  margin: 0 auto;
   max-width: 768px;
   font-family: 'Merriweather', sans-serif;
   font-weight: 200;
@@ -20,27 +20,41 @@ input {
 }
 
 .contact-info .flex-pair {
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
 }
 .contact-info input {
-  flex-grow: 1;
-  flex-basis: 75%;
+  height: 40px;
+  margin-bottom: 15px;
 }
 .contact-info label {
-  flex-basis: 25%;
-  height:50px;
-  margin: auto 0;
+  margin-bottom: 10px;
+}
+
+#zip {
+  max-width: 25%;
+}
+
+.other {
+  height: 100px;
+  padding-left: 280px;
+  padding-right: 280px;
+}
 
 @media (min-width: 768px) {
   .contact-info .flex-pair {
-    display: flex;
     flex-direction: column;
   }
   .contact-info input {
-    height: 40px;
-    margin-bottom: 15px;
+    flex-grow: 1;
+    flex-basis: 75%;
   }
   .contact-info label {
-    margin-bottom: 10px;
+    flex-basis: 25%;
+    height:50px;
+    margin: auto 0;
+  }
+  #zip {
+    max-width: 50%;
   }
 }

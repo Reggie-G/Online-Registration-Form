@@ -11,12 +11,15 @@
   flex-wrap: wrap;
 }
 
+#zip {
+  max-width: 50%;
+}
+
 input[type="email"] {
   background: white;
 }
 
 input::placeholder {
-  display: right;
   color: #fbab00;
 }
 
@@ -46,8 +49,8 @@ a[target="blank"] {
   font-size: .875em;
   font-weight: 400;
   color: #fff;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 354px;
+  padding-right: 354px;
   text-transform: uppercase;
 }
 
