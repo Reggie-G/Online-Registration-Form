@@ -3,58 +3,130 @@
 }
 
 body {
-  margin: 0 auto;
-  max-width: 768px;
+  margin: auto;
+  min-width: 100%;
   font-family: 'Merriweather', sans-serif;
-  font-weight: 200;
-  background-color: #964b00;
-  color: #fff;
+  background-color: #fbff00;
+  color: #000000;
 }
 
-input {
-  border: 1px solid white;
+h1 {
+  width: 100%;
+  margin: 0;
+  font-weight: 700;
+  color: #0000ff;
+  text-align: center;
 }
 
-.contact-info {
-  padding: 50px 50px 35px 50px;
+.intro {
+  text-align: center;
 }
 
-.contact-info .flex-pair {
+form {
+  margin: 0 auto;
+}
+
+.info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  border: none;
 }
-.contact-info input {
-  height: 40px;
-  margin-bottom: 15px;
+
+fieldset {
+  border: none;
+  margin: 1.5em 0;
 }
-.contact-info label {
-  margin-bottom: 10px;
+
+.check
+input[type='radio'],
+input[type='checkbox'] {
+  margin: 1em 0;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+select {
+  margin-bottom: 1.5em;
+}
+
+.container {
+  width: 100%;
+  margin-bottom: 2px;
+  border-top: 5px solid #ff1476;
+  padding: 0 0.5em;
+}
+
+legend {
+  color: blue;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-top: 0;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea,
+select {
+  width: 100%;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 1px 0 #2beede inset;
+  color: black;
+  background-color: #2beede;
+  border: none;
+}
+input::placeholder {
+  text-align: right;
+  color: #000000;
 }
 
 #zip {
-  max-width: 25%;
+  width: 50%;
+  display: block;
 }
 
-.other {
-  height: 100px;
-  padding-left: 280px;
-  padding-right: 280px;
+.btn {
+  width: 100%;
+  margin: 0 auto;
+  flex-grow: 1;
+  background-color: #CEA8A0;
+  font-size: 2em;
+  text-align: center;
+  color: #787B48;
+  padding: 0.5em 0;
+  border: none;
+  border-radius: 5px;
 }
 
 @media (min-width: 768px) {
-  .contact-info .flex-pair {
-    flex-direction: column;
+  form {
+    width: 60%;  
   }
-  .contact-info input {
+
+  .info, .flex-pair {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .info input,
+  .info select {
     flex-grow: 1;
     flex-basis: 75%;
   }
-  .contact-info label {
+
+  .info label {
     flex-basis: 25%;
-    height:50px;
-    margin: auto 0;
   }
+
   #zip {
-    max-width: 50%;
+    max-width: 35;
   }
 }
