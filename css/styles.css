@@ -127,6 +127,6 @@ input::placeholder {
   }
 
   #zip {
-    max-width: 35;
+    max-width: 35%;
   }
 }
